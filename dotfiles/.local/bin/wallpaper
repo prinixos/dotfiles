@@ -1,2 +1,2 @@
 #!/bin/bash
-sxiv -t $HOME/data/git/wallpapers
+sxiv -t $HOME/data/project/personal/projects/wallpapers
