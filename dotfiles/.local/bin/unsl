@@ -1,0 +1,2 @@
+#!/bin/bash
+alacritty -e sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target && killall xfce4-power-man

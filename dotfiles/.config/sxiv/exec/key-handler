@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while read file
+do
+    case "$1" in
+       "b") feh --bg-fill $file && mv ~/.fehbg ~/.config/i3/scripts/fehbg.sh;;
+    esac
+done

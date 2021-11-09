@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+#python ~/.config/youtube-local/server.py &
+
+# USERXSESSION="$XDG_CACHE_HOME/X11/xsession"
+# USERXSESSIONRC="$XDG_CACHE_HOME/X11/xsessionrc"
+# ALTUSERXSESSION="$XDG_CACHE_HOME/X11/Xsession"
+# ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
+
+# Executed by startx (run your window manager from here)
+thunar --daemon &
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY&
+xss-lock -- i3lock -c 000000 &
+exec i3

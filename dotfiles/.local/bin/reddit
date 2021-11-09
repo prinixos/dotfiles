@@ -1,0 +1,4 @@
+#!/bin/bash
+killall libreddit
+librewolf "http://0.0.0.0:8080/settings/restore/?theme=black&front_page=default&layout=card&wide=off&comment_sort=confidence&show_nsfw=on&use_hls=on&hide_hls_notification=on&subscriptions=animememes%2BAnimemes%2Barchlinux%2BArcoLinux%2Bcoolguides%2Bexplainlikeimfive%2BGTAorRussia%2Blinux%2BNaruto%2Bneovim%2Bnonononoyes%2BTanmayBhat%2BTrashTaste%2Bunixporn%2Byesyesyesyesno" &
+libreddit&

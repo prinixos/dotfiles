@@ -1,0 +1,77 @@
+env:
+  TERM: xterm-256color
+window:
+  padding:
+    x: 6
+    y: 6
+  dynamic_padding: false
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+scrolling:
+  history: 5000
+font:
+  normal:
+    family: Hack
+    style: Regular
+  bold:
+    family: Hack
+    style: Bold
+  italic:
+    family: Source Code Pro
+    style: Italic
+  bold_italic:
+    family: Source Code Pro
+    style: Bold Italic
+  size: 10
+  offset:
+    x: 0
+    y: 1
+draw_bold_text_with_bright_colors: true
+background_opacity: 0.9
+key_bindings:
+  - key: V
+    mods: Control|Shift
+    action: Paste
+  - key: C
+    mods: Control|Shift
+    action: Copy
+  - key: Insert
+    mods: Shift
+    action: PasteSelection
+  - key: Key0
+    mods: Control
+    action: ResetFontSize
+  - key: Period
+    mods: Control
+    action: SpawnNewInstance
+shell:
+  program: /bin/fish
+colors:
+  name: Count Von Count
+  author: Baskerville
+  primary:
+    background: "#000000"
+    foreground: "#919191"
+  cursor:
+    text: "#000000"
+    cursor: "#919191"
+  normal:
+    black: "#303030"
+    red: "#c10023"
+    green: "#a83334"
+    yellow: "#b51d2c"
+    blue: "#8c4b46"
+    magenta: "#7d534f"
+    cyan: "#9a413d"
+    white: "#c6c6c6"
+  bright:
+    black: "#5e5e5e"
+    red: "#ff8781"
+    green: "#ffa095"
+    yellow: "#ff948b"
+    blue: "#feb2aa"
+    magenta: "#ebbbb5"
+    cyan: "#ffaaa0"
+    white: "#ffffff"

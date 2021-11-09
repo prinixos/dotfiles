@@ -1,0 +1,5 @@
+#!/bin/bash
+killall python
+python ~/.config/youtube-local/server.py &
+sleep 1
+xdg-open http://localhost:9000/&

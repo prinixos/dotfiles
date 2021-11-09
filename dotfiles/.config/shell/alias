@@ -1,0 +1,139 @@
+alias nano="nvim"
+alias n="cd && clear"
+alias cat="bat"
+alias vim="nvim"
+alias dmenu="dmenu -l 8 -nb '#0F0F0F' -sb '#FE233C' -p 'Choose:'"
+alias nano="nvim"
+alias e="nvim"
+alias kill='killall -q'
+alias weather='clear && curl wttr.in/Jamshedpur'
+alias grep="rg"
+alias youtube-local='python ~/.config/youtube-local/server.py'
+alias unsl="alacritty -e sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target && killall xfce4-power-man"
+alias sl="xfce4-power-manager& alacritty -e sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target"
+alias live="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 3000"
+alias mal="python ~/data/git/ALExport/AniListExport.py"
+alias mv="mv -v"
+alias d="spotdl"
+alias lf="lfrun"
+alias surf="sudo surfshark-vpn down && echo 1 | sudo surfshark-vpn attack"
+alias down="sudo surfshark-vpn down"
+alias vpn="sudo surfshark-vpn down && sudo surfshark-vpn"
+alias bash="bash --init-file ~/.config/bash/bashrc"
+alias gc="git clone"
+alias o="open (fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')"
+alias zap="~/.local/bin/zap"
+
+alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+alias mocp="mocp /home/admin/data/Computer/Music/"
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+#readable output
+alias df='df -h'
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias wget="wget -c"
+
+alias nb="$EDITOR ~/.bashrc"
+
+alias nf="$EDITOR ~/.config/fish/config.fish"
+
+
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+# PTSH
+alias ls='exa'
+alias la='exa -la'
+alias l='exa -l'
+alias cp='cp -v'
+alias rm='rm -v'
+
+alias v="nvim"
+
+#Alacritty
+alias at="alacritty-themes"
+
+#Youtube-dl
+alias yt-dl="youtube-dl -f best"
+alias yt-channel='youtube-dl -f best -ciw -o "%(title)s.%(ext)s" -v'
+alias yt-playlist='youtube-dl -i -f mp4 --yes-playlist'
+
+#Archiver
+#alias unzip="7z x"
+
+#orphan manager
+alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
+
+# navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+#YARN
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+#Websites
+alias website='bat ~/data/guide/init | less'
+alias editwebsite='nvim ~/data/guide/init'
+alias w='wal -i ~/data/git/Wallpaper/ -o alacritty-wal'
+
+alias wiki="w3m "https://wiki.archlinux.org""
+
+alias reload-fonts="fc-cache -f -v"
+
+alias p="paru -S"
+alias pi="paru -Si"
+alias pr="paru -Rns"
+alias pu="paru -Syyu"
+
+#git
+alias push="git add . && git commit -m '+' && git push -u origin main"
+
+#get fastest mirrors in your neighborhood
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pacman.d/mirrorlist"
+
+
+#userlist
+alias userlist="cut -d: -f1 /etc/passwd"
+
+#quickedit
+alias vi3="nvim ~/.config/i3/config"
+
+#Youtube
+alias subs="ytfzf -S --sort"
+alias search="ytfzf"
+
+#kill
+alias kmpc="killall mocp"
+
+#Directory
+alias anime="cd ~/data/.Entertainment/Anime/series"
+alias kayo="cd ~/data/.Entertainment/Anime/series/Kayoanime"
+alias animemovie="cd ~/data/.Entertainment/Anime/movies/"
+alias series="cd ~/data/.Entertainment/Series/"
+alias gitdir="cd ~/data/git/"
+alias guide="cd ~/data/guide"
+alias music="cd ~/data/Computer/Music/"
+alias video="cd ~/data/Computer/Videos/"
+alias wallpaper="cd ~/data/git/wallpapers"
+alias picture="cd ~/data/Computer/Pictures/"
+alias pc="cd ~/data/Computer/Pictures/Screenshot/"
+
+#Commands
+alias c="clear"
+alias r="ranger"
+alias ls="exa --icons --classify --group-directories-first"
+alias l="exa -1 --icons --classify --group-directories-first"
+alias la="exa --group-directories-first --icons --classify -a"
+alias ll="exa -1 --group-directories-first --icons --classify -la"
+alias tree="exa -1 --group-directories-first --icons --classify --tree"
+alias x="exit"
+alias nnn="nnn -P p"
