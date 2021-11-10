@@ -1,2 +1,2 @@
 #!/bin/bash
-wal -i ~/data/project/personal/projects/wallpapers/ && alacritty-wal && genzathurarc > ~/.config/zathura/zathurarc
+wal -i ~/data/project/personal/projects/wallpapers/ && mv ~/.fehbg ~/.config/i3/scripts/fehbg.sh && alacritty-wal && genzathurarc > ~/.config/zathura/zathurarc
