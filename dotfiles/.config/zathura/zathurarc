@@ -1,6 +1,33 @@
-set sandbox none
-set statusbar-h-padding 0
-set statusbar-v-padding 0
-set page-padding 1
+set recolor "true"
+
+set completion-bg "#05181D"
+set completion-fg "#aec3c0"
+set completion-group-bg "#05181D"
+set completion-group-fg "#982C33"
+set completion-highlight-bg "#aec3c0"
+set completion-highlight-fg "#05181D"
+
+set recolor-lightcolor "#05181D"
+set recolor-darkcolor "#aec3c0"
+set default-bg "#05181D"
+
+set inputbar-bg "#05181D"
+set inputbar-fg "#aec3c0"
+set notification-bg "#05181D"
+set notification-fg "#aec3c0"
+set notification-error-bg "#184C5E"
+set notification-error-fg "#aec3c0"
+set notification-warning-bg "#184C5E"
+set notification-warning-fg "#aec3c0"
+set statusbar-bg "#05181D"
+set statusbar-fg "#aec3c0"
+set index-bg "#05181D"
+set index-fg "#aec3c0"
+set index-active-bg "#aec3c0"
+set index-active-fg "#05181D"
+set render-loading-bg "#05181D"
+set render-loading-fg "#aec3c0"
+
+set window-title-home-tilde true
+set statusbar-basename true
 set selection-clipboard clipboard
-set recolor             true
