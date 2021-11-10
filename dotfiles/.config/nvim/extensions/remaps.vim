@@ -28,8 +28,8 @@ nmap <Leader>p :Buffers<CR>
 " NVIM
 nmap <leader>pi :PlugInstall<CR>
 nmap <leader>pc :PlugClean<CR>
-nmap <leader>s :source /home/admin/.config/nvim/init.vim<CR>
-nmap <Leader>c :e /home/admin/.config/nvim/init.vim<CR>
+nmap <leader>s :source ~/.config/nvim/init.vim<CR>
+nmap <Leader>c :e ~/.config/nvim/init.vim<CR>
 "PRETTIER
 " nmap <M-f> :Neoformat<CR>
 "Git

@@ -15,40 +15,27 @@ set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $fg  $bg       $bg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
+#client.focused          $bg     $bg     $fg  $bg       $bg
+#client.focused_inactive $bg     $bg     $fg  $fg       $fg
+#client.unfocused        $bg     $bg     $fg  $bg       $bg
+#client.urgent           $bg     $bg     $fg  $bg       $bg
+#client.placeholder      $bg     $bg     $fg  $bg       $bg
+#
+#client.background       $bg
 
-client.background       $bg
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
 #
 #set $border_color "#003182"
 #set $foreground_color "#1E88E5"
 #
 #
 #
-## class                 border  backgr. text    indicator child_border
-#client.focused          #4c7899 #285577 #ffffff $border_color   $border_color
-#client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-#client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-#client.urgent           #2f343a #900000 #ffffff #900000   #900000
-#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-#client.background       #ffffff
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff $bg       $bg
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
 
 #==============================================================================
 #++++++++++++++++++++++++++++++ Workspace +++++++++++++++++++++++++++++++++++++
@@ -287,7 +274,7 @@ for_window [title="tmux"] move container to workspace number 9
 #==============================================================================
 font pango:monospace 8
 smart_borders no_gaps
-for_window [class=".*"] border pixel 1.5
+for_window [class=".*"] border pixel 4
 gaps inner 10
 gaps outer 1
 

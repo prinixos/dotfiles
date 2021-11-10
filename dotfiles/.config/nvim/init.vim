@@ -66,8 +66,9 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plug 'tpope/vim-fugitive'
+Plug 'richtan/pywal.vim.git'
 
-Plug 'dylanaraps/wal.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()
 
 source ~/.config/nvim/extensions/indentLine.vim
