@@ -1,4 +1,10 @@
 #!/bin/bash
-wal -i ~/data/project/personal/projects/wallpapers/ && alacritty-wal && genzathurarc > ~/.config/zathura/zathurarc
+if [ $1 ] ; then
+    imagepath=$(realpath $1)
+    wal -i $imagepath && alacritty-wal && genzathurarc > ~/.config/zathura/zathurarc && dunstwal
+else
+    wal -i ~/data/project/personal/projects/wallpapers/ && alacritty-wal && genzathurarc > ~/.config/zathura/zathurarc && dunstwal
+fi
+
 sleep 7
 mv ~/.fehbg ~/.config/i3/scripts/fehbg.sh

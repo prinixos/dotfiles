@@ -10,7 +10,7 @@ syntax on
 filetype plugin indent on
 set encoding=UTF-8
 set exrc
-set guicursor=n-v-c:block-Cursor
+" set guicursor=n-v-c:block-Cursor
 set relativenumber
 set nohlsearch
 set hidden
@@ -41,6 +41,7 @@ set updatetime=50
 set shortmess+=c
 set colorcolumn=80
 set splitbelow splitright
+set guifont=Hack:h18
 
 call plug#begin('~/.local/share/vim/plugged')
 

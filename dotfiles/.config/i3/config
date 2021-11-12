@@ -176,6 +176,7 @@ bindsym $mod+Shift+r restart
 #+++++++++++++++++++++++++++ OPENING A TERMINAL +++++++++++++++++++++++++++++++
 #==============================================================================
 bindsym Mod1+Return exec ~/.config/i3/scripts/terminal.sh
+bindsym Mod1+Shift+Return exec alacritty
 
 #==============================================================================
 #+++++++++++++++++++++++++++++ DMENU SCRIPTS ++++++++++++++++++++++++++++++++++
@@ -267,7 +268,7 @@ for_window [title="Telegram"] move container to workspace number 3
 for_window [title="AniList"] move container to workspace number 4
 for_window [title="AniChart"] move container to workspace number 4
 for_window [instance="Alacritty" class="Alacritty" title="mocp"] move container to workspace number 9
-for_window [title="tmux"] move container to workspace number 9
+for_window [title="tmux" instance="Alacritty" class="Alacritty"] move container to workspace number 10
 
 #==============================================================================
 #+++++++++++++++++++++++++++++ Stylings +++++++++++++++++++++++++++++++++++++++

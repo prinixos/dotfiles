@@ -15,6 +15,7 @@ dunst &
 nm-applet &
 unclutter --timeout 1 &
 picom &
+~/.config/i3/scripts/touchpad.sh &
 xbacklight -set 10 &
 xfce4-power-manager &
 syncthing &

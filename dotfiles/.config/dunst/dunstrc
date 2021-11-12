@@ -1,4 +1,3 @@
-
 [global]
     ### Display ###
 
@@ -40,7 +39,7 @@
     progress_bar_height = 10
 
     # Set the frame width of the progress bar
-    progress_bar_frame_width = 0.5
+    progress_bar_frame_width = 1
 
     # Set the minimum width for the progress bar
     progress_bar_min_width = 150
@@ -82,10 +81,10 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#18191E"
+    frame_color = "#758E90"
 
     # Define a color for the separator.
     # possible values are:
@@ -328,21 +327,21 @@
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
 [urgency_low]
-frame_color = "#18191E"
-foreground = "#E53935"
-background = "#18191E"
+frame_color = "#758E90"
+foreground = "#758E90"
+background = "#0f1110"
 timeout = 5
 
 [urgency_normal]
-frame_color = "#18191E"
-foreground = "#E53935"
-background = "#18191E"
+frame_color = "#758E90"
+foreground = "#758E90"
+background = "#0f1110"
 timeout = 10
 
 [urgency_critical]
-frame_color = "#FFFF00"
-foreground = "#E53935"
-background = "#18191E"
+frame_color = "#758E90"
+foreground = "#758E90"
+background = "#0f1110"
 timeout = 10
 
 # Every section that isn't one of the above is interpreted as a rules to

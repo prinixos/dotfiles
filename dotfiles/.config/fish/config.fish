@@ -24,19 +24,6 @@ end
 
 
 function sync
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"Boruto"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"Mushoku Tensei: Jobless Reincarnation"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"takt op.Destiny"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"Blue Period"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"Demons Slayer"
-    # mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"Meiruko Chan"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"My Senpai Is Annoying"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"Platinum End"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"The Faraway Paladin"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"The Worlds Finnest Assasin"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"Komi Can't Communicate"
-    mkdir ~/data/.Entertainment/Anime/series/Kayoanime/"Ranking Of Kings"
-    clear
     rclone sync -P "Boruto Box 7:"              ~/data/.Entertainment/Anime/series/Kayoanime/"Boruto/"
     rclone sync -P "Mushoku Tensei Box 2:"      ~/data/.Entertainment/Anime/series/Kayoanime/"Mushoku Tensei: Jobless Reincarnation"
     rclone sync -P "Takt Op:"                   ~/data/.Entertainment/Anime/series/Kayoanime/"takt op.Destiny/"
