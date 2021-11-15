@@ -25,7 +25,7 @@ alias zap="~/.local/bin/zap"
 alias sd="sudoedit"
 alias wall="wal -i ~/data/project/personal/projects/wallpapers/ && alacritty-wal && genzathurarc > ~/.config/zathura/zathurarc"
 
-alias stowgit="cd ~/data/project/personal/linux/dotfiles/ && stow -vt ~ dotfiles && git add . && git commit -m '+' && git push -u origin main"
+alias stowgit="cd ~/data/project/personal/linux/dotfiles/ && stow -vt ~ dotfiles && git add . && git commit -m '+' && git push -u origin main && cd -"
 
 alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 alias mocp="mocp /home/admin/data/Computer/Music/"
