@@ -18,24 +18,30 @@ function fish_prompt
     set_color normal
 end
 
+function encrypt --argument filename
+    7z a -p -mx=9 -mhe -t7z $filename.7z $filename && rm $filename
+end
+
 function bak --argument filename
     cp $filename $filename.bak
 end
 
 
 function sync
-    rclone sync -P "Boruto Box 7:"              ~/data/.Entertainment/Anime/series/Kayoanime/"Boruto/"
-    rclone sync -P "Mushoku Tensei Box 2:"      ~/data/.Entertainment/Anime/series/Kayoanime/"Mushoku Tensei: Jobless Reincarnation"
-    rclone sync -P "Takt Op:"                   ~/data/.Entertainment/Anime/series/Kayoanime/"takt op.Destiny/"
-    rclone sync -P "Blue Period:"               ~/data/.Entertainment/Anime/series/Kayoanime/"Blue Period/"
-    rclone sync -P "Demons Slayer:"             ~/data/.Entertainment/Anime/series/Kayoanime/"Demons Slayer/"
-    # rclone sync -P "Meiruko Chan:"            ~/data/.Entertainment/Anime/series/Kayoanime/"Meiruko Chan/"
-    rclone sync -P "My senpai is annoying:"     ~/data/.Entertainment/Anime/series/Kayoanime/"My Senpai Is Annoying/"
-    rclone sync -P "Platinum End:"              ~/data/.Entertainment/Anime/series/Kayoanime/"Platinum End/"
-    rclone sync -P "The Faraway Paladin:"       ~/data/.Entertainment/Anime/series/Kayoanime/"The Faraway Paladin/"
-    rclone sync -P "Worlds Finnest Assasin:"    ~/data/.Entertainment/Anime/series/Kayoanime/"The Worlds Finnest Assasin/"
-    rclone sync -P "komi cant communicate:"     ~/data/.Entertainment/Anime/series/Kayoanime/"Komi Can't Communicate/"
-    rclone sync -P "Ranking of kings:"          ~/data/.Entertainment/Anime/series/Kayoanime/"Ranking Of Kings"
+    rclone sync -P "Boruto Box 7:"              ~/data/.Entertainment/Anime/series/Watching/"Boruto/"
+    rclone sync -P "Mushoku Tensei Box 2:"      ~/data/.Entertainment/Anime/series/Watching/"Mushoku Tensei: Jobless Reincarnation"
+    rclone sync -P "Takt Op:"                   ~/data/.Entertainment/Anime/series/Watching/"takt op.Destiny/"
+    rclone sync -P "Blue Period:"               ~/data/.Entertainment/Anime/series/Watching/"Blue Period/"
+    rclone sync -P "Demons Slayer:"             ~/data/.Entertainment/Anime/series/Watching/"Demons Slayer/"
+    rclone sync -P "Meiruko Chan:"            ~/data/.Entertainment/Anime/series/Watching/"Meiruko Chan/"
+    rclone sync -P "My senpai is annoying:"     ~/data/.Entertainment/Anime/series/Watching/"My Senpai Is Annoying/"
+    rclone sync -P "Platinum End:"              ~/data/.Entertainment/Anime/series/Watching/"Platinum End/"
+    rclone sync -P "The Faraway Paladin:"       ~/data/.Entertainment/Anime/series/Watching/"The Faraway Paladin/"
+    rclone sync -P "Worlds Finnest Assasin:"    ~/data/.Entertainment/Anime/series/Watching/"The Worlds Finnest Assasin/"
+    rclone sync -P "komi cant communicate:"     ~/data/.Entertainment/Anime/series/Watching/"Komi Can't Communicate/"
+    rclone sync -P "Ranking of kings:"          ~/data/.Entertainment/Anime/series/Watching/"Ranking Of Kings"
+    rclone sync -P "86:"                        ~/data/.Entertainment/Anime/series/Watching/"86"
+    rclone sync -P "Miss Kobayashi Season 2:"   ~/data/.Entertainment/Anime/series/Completed/"Dragon Maid/Season 2"
 end
 
 
@@ -71,6 +77,14 @@ function sync-naruto-movie
     rclone copy -P "Naruto Box 0:"                ~/data/.Entertainment/Anime/movies/Naruto/
 end
 
+function aotsync
+    rclone sync -P "AOT1:"                        ~/data/.Entertainment/Anime/series/Completed/"Attack on Titan/Season 1"
+    rclone sync -P "AOT2:"                        ~/data/.Entertainment/Anime/series/Completed/"Attack on Titan/Season 2"
+    rclone sync -P "AOT3:"                        ~/data/.Entertainment/Anime/series/Completed/"Attack on Titan/Season 3"
+    rclone sync -P "AOT4:"                        ~/data/.Entertainment/Anime/series/Completed/"Attack on Titan/Season 4"
+    rclone sync -P "AOTOVA:"                      ~/data/.Entertainment/Anime/series/Completed/"Attack on Titan/OVA"
+    rclone sync -P "AOT-JH:"                      ~/data/.Entertainment/Anime/series/Completed/"Attack on Titan - Junior High"
+end
 
 # I say we take off and nuke the entire site from orbit.
 # It's the only way to be sure.

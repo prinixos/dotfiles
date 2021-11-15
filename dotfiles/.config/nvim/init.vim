@@ -39,25 +39,28 @@ set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
 set updatetime=50
 set shortmess+=c
-set colorcolumn=80
+" set colorcolumn=80
 set splitbelow splitright
 set guifont=Hack:h18
 
 call plug#begin('~/.local/share/vim/plugged')
 
-Plug 'morhetz/gruvbox'
+" Colorscheme
+Plug 'marko-cerovac/material.nvim'
 
-" STATUS BARS
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
-"FZF
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Cursor
+Plug 'yamatsum/nvim-cursorline'
 
-"BASIC PLUGINS
+" Distraction Free
+Plug 'junegunn/goyo.vim'
+
+" "BASIC PLUGINS
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'Yggdroot/indentLine'
@@ -67,10 +70,15 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plug 'tpope/vim-fugitive'
-Plug 'richtan/pywal.vim.git'
-
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+Plug 'ThePrimeagen/vim-be-good'
+Plug 'numToStr/Comment.nvim'
+
+
 call plug#end()
+
+lua require('Comment').setup()
 
 source ~/.config/nvim/extensions/indentLine.vim
 source ~/.config/nvim/extensions/fzf.vim

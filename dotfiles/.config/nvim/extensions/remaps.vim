@@ -23,7 +23,6 @@ nmap <M-f> :Ranger<CR>
 nmap <M-a> gcck<CR>
 nmap <M-s> :w<CR>
 nmap <M-e> :e ~/
-nmap <Leader>p :Buffers<CR>
 
 " NVIM
 nmap <leader>pi :PlugInstall<CR>
@@ -41,11 +40,17 @@ nmap <leader>g<up> :Git push<CR>
 nmap <leader>gl :Git log --oneline<CR>
 nmap <leader>gb :GBranches<CR>
 "FZF
-nmap <leader><space> :Files<CR>
-nmap <leader>. :Files ~/<CR>
+nmap <leader><space> <cmd>Telescope find_files<CR>
+nmap <leader>p <cmd>Telescope buffers<CR>
+nmap <leader>p <cmd>Telescope live_grep<CR>
 nmap <leader>cs :Colors<CR>
 " nmap <C-f> :Rg<CR>
 nmap <leader>l :Files ~/.config/<CR>
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 
 nmap <C-f> :BLine<CR>

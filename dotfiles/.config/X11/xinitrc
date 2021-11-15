@@ -13,5 +13,6 @@
 thunar --daemon &
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY&
 xss-lock -- i3lock -c 000000 &
+rm ~/.config/i3/scripts/fehbg.sh &
 polywal &
 exec i3

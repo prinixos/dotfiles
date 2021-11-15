@@ -1,5 +1,11 @@
 env:
   TERM: xterm-256color
+cursor:
+  style:
+    shape: Beam
+    blinking: off
+    blink-interval: 750
+    unfocused_hollow: true
 window:
   padding:
     x: 6
@@ -28,6 +34,7 @@ font:
   offset:
     x: 0
     y: 1
+
 draw_bold_text_with_bright_colors: true
 background_opacity: 0.9
 key_bindings:
@@ -51,27 +58,27 @@ shell:
 # BEGIN ACE
 colors:
   primary:
-    background: '#0f1110'
-    foreground: '#cfd0cb'
+    background: '#0C0F12'
+    foreground: '#d9c6b3'
   cursor:
-    text:       '#0f1110'
-    cursor:     '#cfd0cb'
+    text:       '#0C0F12'
+    cursor:     '#d9c6b3'
   normal:
-    black:      '#0f1110'
-    red:        '#AD4A38'
-    green:      '#A18A74'
-    yellow:     '#627A82'
-    blue:       '#758E90'
-    magenta:    '#8D9795'
-    cyan:       '#9BA6A0'
-    white:      '#cfd0cb'
+    black:      '#0C0F12'
+    red:        '#36464B'
+    green:      '#4D504D'
+    yellow:     '#6C6152'
+    blue:       '#855A3D'
+    magenta:    '#937155'
+    cyan:       '#AC8D6A'
+    white:      '#d9c6b3'
   bright:
-    black:      '#90918e'
-    red:        '#AD4A38'
-    green:      '#A18A74'
-    yellow:     '#627A82'
-    blue:       '#758E90'
-    magenta:    '#8D9795'
-    cyan:       '#9BA6A0'
-    white:      '#cfd0cb'
+    black:      '#978a7d'
+    red:        '#36464B'
+    green:      '#4D504D'
+    yellow:     '#6C6152'
+    blue:       '#855A3D'
+    magenta:    '#937155'
+    cyan:       '#AC8D6A'
+    white:      '#d9c6b3'
 # END ACE
