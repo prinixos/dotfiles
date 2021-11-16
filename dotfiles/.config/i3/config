@@ -230,8 +230,8 @@ bindsym $mod+z exec ~/.config/i3/scripts/touchpad.sh
 #==============================================================================
 #++++++++++++++++++++++++++++ SCREENSHOT ++++++++++++++++++++++++++++++++++++++
 #==============================================================================
-bindsym --release Shift+Print exec "scrot -z -s -e 'xclip -selection c -t image/png < $f && mv $f ~/prinix/Computer/Pictures/Screenshot/'"
-bindsym --release Print exec "scrot -z -e 'xclip -selection c -t image/png < $f && mv $f ~/prinix/Computer/Pictures/Screenshot/'"
+bindsym --release Shift+Print exec "scrot -z -s -e 'xclip -selection c -t image/png < $f && mv $f ~/Computer/Pictures/Screenshot/'"
+bindsym --release Print exec "scrot -z -e 'xclip -selection c -t image/png < $f && mv $f ~/Computer/Pictures/Screenshot/'"
 
 
 #==============================================================================
@@ -272,7 +272,7 @@ for_window [title="WhatsApp"] move container to workspace number 3
 for_window [title="Telegram"] move container to workspace number 3
 for_window [instance="element"] move container to workspace number 3
 for_window [title="Telegram"] move container to workspace number 3
-for_window [title="AniList"] move container to workspace number 4
+for_window [title="Brave-browser" instance="crx_nhpkhfhppiampjblenncchhnipmeafgd" title="AniList"] move container to workspace number 4
 for_window [title="AniChart"] move container to workspace number 4
 for_window [instance="Alacritty" class="Alacritty" title="mocp"] move container to workspace number 9
 for_window [title="tmux" instance="Alacritty" class="Alacritty"] move container to workspace number 10

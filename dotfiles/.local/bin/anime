@@ -1,22 +1,2 @@
 #!/bin/bash
-
-while :
-do
-    rclone sync -P "Boruto Box 7:"              ~/data/.Entertainment/Anime/series/Watching/"Boruto/"
-    rclone sync -P "Mushoku Tensei Box 2:"      ~/data/.Entertainment/Anime/series/Watching/"Mushoku Tensei: Jobless Reincarnation"
-    rclone sync -P "Takt Op:"                   ~/data/.Entertainment/Anime/series/Watching/"takt op.Destiny/"
-    rclone sync -P "Blue Period:"               ~/data/.Entertainment/Anime/series/Watching/"Blue Period/"
-    rclone sync -P "Demons Slayer:"             ~/data/.Entertainment/Anime/series/Watching/"Demons Slayer/"
-    rclone sync -P "Meiruko Chan:"              ~/data/.Entertainment/Anime/series/Watching/"Meiruko Chan/"
-    rclone sync -P "My senpai is annoying:"     ~/data/.Entertainment/Anime/series/Watching/"My Senpai Is Annoying/"
-    rclone sync -P "Platinum End:"              ~/data/.Entertainment/Anime/series/Watching/"Platinum End/"
-    rclone sync -P "The Faraway Paladin:"       ~/data/.Entertainment/Anime/series/Watching/"The Faraway Paladin/"
-    rclone sync -P "Worlds Finnest Assasin:"    ~/data/.Entertainment/Anime/series/Watching/"The Worlds Finnest Assasin/"
-    rclone sync -P "komi cant communicate:"     ~/data/.Entertainment/Anime/series/Watching/"Komi Can't Communicate/"
-    rclone sync -P "Ranking of kings:"          ~/data/.Entertainment/Anime/series/Watching/"Ranking Of Kings"
-    rclone sync -P "86:"                        ~/data/.Entertainment/Anime/series/Watching/"86"
-    rclone sync -P "Miss Kobayashi Season 2:"   ~/data/.Entertainment/Anime/series/Completed/"Dragon Maid/Season 2"
-    echo "Anime Had Sync"
-    sleep 3600
-done
-
+alacritty -e ranger /home/user/data/.Entertainment/Anime/series/

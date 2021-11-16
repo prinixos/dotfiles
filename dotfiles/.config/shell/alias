@@ -1,8 +1,6 @@
-alias nano="nvim"
 alias n="cd && clear"
 alias cat="bat"
 alias dmenu="dmenu -l 8 -nb '#0F0F0F' -sb '#FE233C' -p 'Choose:'"
-alias nano="nvim"
 alias e="nvim"
 alias kill='killall -q'
 alias weather='clear && curl wttr.in/Jamshedpur'
@@ -24,6 +22,7 @@ alias o="open (fzf --preview 'bat --style=numbers --color=always --line-range :5
 alias zap="~/.local/bin/zap"
 alias sd="sudoedit"
 alias wall="wal -i ~/data/project/personal/projects/wallpapers/ && alacritty-wal && genzathurarc > ~/.config/zathura/zathurarc"
+alias trash="gio trash"
 
 alias stowgit="cd ~/data/project/personal/linux/dotfiles/ && stow -vt ~ dotfiles && git add . && git commit -m '+' && git push -u origin main && cd -"
 
