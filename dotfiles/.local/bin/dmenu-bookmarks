@@ -1,5 +1,5 @@
-#!/bin/bash
-website=$(cat ~/data/.recover/bookmarks | dmenu | awk -F "|" '{print $NF}')
+#!/usr/bin/env bash
+website=$(cat ~/data/.recover/bookmarks | dmenu -l 8 -p "Choose :" -nb "#0f0f0f" -sb "#0C388A" | awk -F "|" '{print $NF}')
 
 if [ $website ] ;then
     librewolf $website;

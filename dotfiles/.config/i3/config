@@ -187,6 +187,7 @@ bindsym $mod+o exec env LC_ALL=en_US.UTF-8 todo-dmenu -l 8 -nb "#0F0F0F" -h 30 -
 bindsym $mod+t exec goto-dmenu
 bindsym $mod+Shift+t exec tmux kill-server
 bindsym $mod+n exec nw -nb "#0f0f0f" -sb "$bg"
+bindsym $mod+g exec dmenu-bookmarks
 
 #==============================================================================
 #++++++++++++++++++++++++++++++++ I3LOCK ++++++++++++++++++++++++++++++++++++++

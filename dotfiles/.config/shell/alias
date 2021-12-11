@@ -23,6 +23,7 @@ alias zap="~/.local/bin/zap"
 alias sd="sudoedit"
 alias wall="wal -i ~/data/project/personal/projects/wallpapers/ && alacritty-wal && genzathurarc > ~/.config/zathura/zathurarc"
 alias trash="gio trash"
+alias addbkm="nvim ~/data/.recover/bookmarks"
 
 alias stowgit="cd ~/data/project/personal/linux/dotfiles/ && stow -vt ~ dotfiles && git add . && git commit -m '+' && git push -u origin main && cd -"
 
