@@ -1,5 +1,8 @@
 #!/bin/bash
 website=$(cat ~/data/.recover/bookmarks | dmenu | awk -F "|" '{print $NF}')
 
-librewolf $website
-
+if [ $website ] ;then
+    librewolf $website;
+else
+    echo "Nothing"
+fi
