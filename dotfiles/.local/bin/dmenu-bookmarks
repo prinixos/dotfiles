@@ -1,0 +1,5 @@
+#!/bin/bash
+website=$(cat ~/data/.recover/bookmarks | dmenu | awk -F "|" '{print $NF}')
+
+librewolf $website
+

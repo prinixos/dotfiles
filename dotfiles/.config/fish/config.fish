@@ -28,20 +28,22 @@ end
 
 
 function sync
-    rclone sync -P "Boruto Box 7:"              ~/data/.Entertainment/Anime/series/Watching/"Boruto/"
-    rclone sync -P "Mushoku Tensei Box 2:"      ~/data/.Entertainment/Anime/series/Watching/"Mushoku Tensei: Jobless Reincarnation"
-    rclone sync -P "Takt Op:"                   ~/data/.Entertainment/Anime/series/Watching/"takt op.Destiny/"
-    rclone sync -P "Blue Period:"               ~/data/.Entertainment/Anime/series/Watching/"Blue Period/"
-    rclone sync -P "Demons Slayer:"             ~/data/.Entertainment/Anime/series/Watching/"Demons Slayer/"
-    rclone sync -P "Meiruko Chan:"            ~/data/.Entertainment/Anime/series/Watching/"Meiruko Chan/"
-    rclone sync -P "My senpai is annoying:"     ~/data/.Entertainment/Anime/series/Watching/"My Senpai Is Annoying/"
-    rclone sync -P "Platinum End:"              ~/data/.Entertainment/Anime/series/Watching/"Platinum End/"
-    rclone sync -P "The Faraway Paladin:"       ~/data/.Entertainment/Anime/series/Watching/"The Faraway Paladin/"
-    rclone sync -P "Worlds Finnest Assasin:"    ~/data/.Entertainment/Anime/series/Watching/"The Worlds Finnest Assasin/"
-    rclone sync -P "komi cant communicate:"     ~/data/.Entertainment/Anime/series/Watching/"Komi Can't Communicate/"
-    rclone sync -P "Ranking of kings:"          ~/data/.Entertainment/Anime/series/Watching/"Ranking Of Kings"
-    rclone sync -P "86:"                        ~/data/.Entertainment/Anime/series/Watching/"86"
-    rclone sync -P "Miss Kobayashi Season 2:"   ~/data/.Entertainment/Anime/series/Completed/"Dragon Maid/Season 2"
+    rclone copy -P "Miss Kobayashi Season 2:"           ~/data/.Entertainment/Anime/series/Completed/"Dragon Maid/Season 2"
+    rclone copy -P "Boruto Box 7:"                      ~/data/.Entertainment/Anime/series/Watching/"Boruto/"
+    rclone copy -P "Mushoku Tensei Box 2:"              ~/data/.Entertainment/Anime/series/Watching/"Mushoku Tensei: Jobless Reincarnation"
+    rclone copy -P "Takt Op:"                           ~/data/.Entertainment/Anime/series/Watching/"takt op.Destiny/"
+    rclone copy -P "Demons Slayer:"                     ~/data/.Entertainment/Anime/series/Watching/"Demons Slayer/"
+    rclone copy -P "Meiruko Chan:"                      ~/data/.Entertainment/Anime/series/Watching/"Meiruko Chan/"
+    rclone copy -P "My senpai is annoying:"             ~/data/.Entertainment/Anime/series/Watching/"My Senpai Is Annoying/"
+    rclone copy -P "The Faraway Paladin:"               ~/data/.Entertainment/Anime/series/Watching/"The Faraway Paladin/"
+    rclone copy -P "The Vampire Dies In No Time:"       ~/data/.Entertainment/Anime/series/Watching/"The Vampire Dies In No Time"
+    rclone copy -P "Ranking of kings:"                  ~/data/.Entertainment/Anime/series/Watching/"Ranking Of Kings"
+    rclone copy -P "Blue Period:"                       ~/data/.Entertainment/Anime/series/Watching/"Blue Period/"
+    rclone copy -P "Worlds Finnest Assasin:"            ~/data/.Entertainment/Anime/series/Watching/"The Worlds Finnest Assasin/"
+    rclone copy -P "komi cant communicate:"             ~/data/.Entertainment/Anime/series/Watching/"Komi Can't Communicate/"
+    rclone copy -P "86:"                                ~/data/.Entertainment/Anime/series/Watching/"86"
+    rclone copy -P "Platinum End:"                      ~/data/.Entertainment/Anime/series/Watching/"Platinum End/"
+    rclone copy -P "One Piece 14:"                      ~/data/.Entertainment/Anime/series/Watching/"One Piece"
 end
 
 
@@ -53,6 +55,27 @@ function sync-naruto
     rclone copy -P "Naruto Box 3:"     ~/data/.Entertainment/Anime/series/Completed/Naruto/"Season 1"
     rclone copy -P "Naruto Box 4:"     ~/data/.Entertainment/Anime/series/Completed/Naruto/"Season 1"
 end
+
+
+function sync-onepiece
+    mkdir ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    clear
+    rclone copy -P "One Piece 01:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 02:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 03:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 04:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 05:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 06:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 07:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 08:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 09:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 10:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 11:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 12:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 13:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+    rclone copy -P "One Piece 14:"     ~/data/.Entertainment/Anime/series/Watching/"One Piece"
+end
+
 
 function sync-naruto-shippuden
     mkdir ~/data/.Entertainment/Anime/series/Completed/Naruto/"Season 2"

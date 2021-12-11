@@ -8,7 +8,6 @@
 
 #!/bin/bash
 
-$HOME/.config/polybar/launch.sh &
 python $HOME/.config/youtube-local/server.py &
 ~/.config/i3/scripts/fehbg.sh &
 dunst &
@@ -20,5 +19,6 @@ xbacklight -set 10 &
 xfce4-power-manager &
 syncthing &
 setxkbmap -option caps:none &
+apolybar &
 # alacritty -e tmux a &
 # kdeconnect-cli -l &
